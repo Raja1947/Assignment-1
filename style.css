@@ -372,6 +372,9 @@ body {
   align-items: center;
   gap: 30px;
 }
+.insur-left img{
+  width: 100%;
+}
 .insur-left .insur-details{
   text-align: start;
   display: flex;
@@ -395,5 +398,70 @@ body {
   color: var(--para-color);
   font-size: 16px;
   
+}
+
+/* paddy-comapre  */
+.compare{
+  background-color: var(--green-color);
+  position: relative;
+}
+.half-circle{
+  position: absolute;
+  bottom: 40px;
+}
+.moon{
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  
+  
+  
+}
+.moon img{
+  width: 300px;
+}
+.compare-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 50px 0;
+  color: var(--white-color);
+}
+.compare-details h1{
+  font-size: 31px;
+  font-weight: 500;
+  
+}
+.comapre-info{
+  display: flex;
+  gap: 80px;
+  /* justify-content: space-around; */
+  align-items: center;
+  justify-content: space-between;
+  
+  
+  
+
+}
+.comapre-more-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+text-align: center;
+justify-content: space-between;
+gap: 20px;
+
+}
+.comapre-more-details h6{
+  font-size: 20px;
+  font-weight: 500;
+}
+.comapre-more-details p{
+  font-size: 16px;
+}
+.comapre-more-details img{
+  width: 60px;
+  height: 60px;
 }
 
