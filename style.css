@@ -21,7 +21,10 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  /* padding: 0 10px; */
+  padding: 0 2%;
+  width: 100%;
+  box-sizing: border-box;
 }
 .container-fluid {
   width: 100%;
@@ -38,6 +41,7 @@ body {
   top: 0;
   z-index: 99999;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 5px;
+  background-color: var(--white-color);
 }
 
 .header {
@@ -273,7 +277,7 @@ body {
 
 /* policy-section  */
 .policy-section {
-  padding: 70px 0;
+  padding: 70px 0px;
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -313,24 +317,24 @@ body {
   .policy-section {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 40px 30px;
+    padding: 40px 0px;
   }
   .policy-info {
-    padding: 20px 10px;
+    padding: 20px 0px;
   }
 }
 @media screen and (max-width: 500px) {
   .policy-section {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    padding: 50px 30px;
+    padding: 50px 0px;
   }
 }
 @media screen and (max-width: 400px) {
   .policy-section {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
-    padding: 50px 30px;
+    padding: 50px 0px;
   }
 }
 
@@ -492,8 +496,16 @@ body {
     font-size: 16px;
     max-width: 600px;
   }
-  .commitment-right img {
+  .commitment-right {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+  }
+  .commitment-right img{
     width: 100%;
+    object-fit: cover;
+    display: none;
   }
   .yellow-box{
     display: none;
@@ -554,6 +566,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
   align-items: center;
+  justify-items: end;
 }
 @media screen and (max-width: 768px) {
   .partner {
@@ -985,9 +998,10 @@ body {
 /* footer  */
 .footer-background {
   background-color: var(--green-color);
+  
 }
 .footer {
-  padding: 50px 0;
+  padding: 50px 0px;
   display: flex;
   flex-direction: column;
   gap: 35px;
@@ -996,6 +1010,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 50px;
 }
 .footer-top ul {
   display: flex;
@@ -1033,7 +1048,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .footer {
-    padding: 40px 30px;
+    padding: 40px 0px;
     gap: 30px;
   }
   .footer-top {
